@@ -1,0 +1,31 @@
+<scenario xmlns="http://www.testlum.com/testing/model/scenario"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.testlum.com/testing/model/scenario scenario.xsd">
+
+    <overview>
+        <description>Web automation test </description>
+        <name>Web</name>
+        <jira>https://knubitech-team-sq2uw4em.atlassian.net//browse/WIN-2</jira>
+    </overview>
+
+    <settings>
+        <tags>web</tags>
+    </settings>
+
+    <web comment="Starting web script">
+        <wait comment="Wait for 1 second" time="1"/>
+        <assert comment="Verify page title">
+            <title comment="Verify page title">
+                <content>Testlum</content>
+            </title>
+        </assert>
+        <assert comment="Verify element's attribute value">
+            <attribute comment="Verify attribute innerText of noCodeFullCoverageH1"
+                       locator="homePage.noCodeFullCoverageH1"
+                       locatorStrategy="locatorId"
+                       name="innerText">
+                <content>No Code, Full Coverage!</content>
+            </attribute>
+        </assert>
+    </web>
+</scenario>
