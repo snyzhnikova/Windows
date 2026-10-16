@@ -1,4 +1,6 @@
-<uiConfig xmlns="http://www.testlum.com/testing/model/global-config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.testlum.com/testing/model/global-config global-config.xsd">
+<uiConfig xmlns="http://www.testlum.com/testing/model/global-config"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.testlum.com/testing/model/global-config global-config.xsd">
     <web enabled="true">
         <baseUrl>https://testlum.com</baseUrl>
         <autoHealing enabled="false" mode="soft"/>
@@ -6,11 +8,24 @@
             <takeScreenshots enabled="true"/>
             <elementAutowait seconds="5"/>
             <browsers>
-                <chrome alias="BROWSER" enabled="true" headlessMode="false" maximizedBrowserWindow="true">
+                <chrome alias="BROWSER"
+                        enabled="true"
+                        headlessMode="false"
+                        keepDownloadedFiles="false"
+                        maximizedBrowserWindow="true">
                     <browserType>
-                        <localBrowser></localBrowser>
+                        <localBrowser/>
                     </browserType>
                 </chrome>
+                <edge alias="BROWSER_2"
+                      enabled="false"
+                      headlessMode="false"
+                      keepDownloadedFiles="false"
+                      maximizedBrowserWindow="false">
+                    <browserType>
+                        <localBrowser/>
+                    </browserType>
+                </edge>
             </browsers>
         </browserSettings>
     </web>
