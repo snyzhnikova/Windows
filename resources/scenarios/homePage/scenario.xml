@@ -4,8 +4,8 @@
 
     <overview>
         <description>Web automation test </description>
-        <name>Web</name>
-        <jira>https://knubitech-team-sq2uw4em.atlassian.net//browse/WIN-3</jira>
+        <name>UI test for home page</name>
+        <jira>https://knubitech-team-sq2uw4em.atlassian.net//browse/WIN-4</jira>
     </overview>
 
     <settings>
